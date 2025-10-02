@@ -9,8 +9,8 @@ const Card = (props) => {
         <>
         <div onClick={props.flipFunction} className="card-container">
             <div className={props.flipped}>
-                <div className='front'>{props.card[props.cardNum]}</div>
-                <div className='back'>{props.card[props.cardNum]}</div>
+                <div className='front'>{props.card[props.cardNum].question}</div>
+                <div className='back'>{props.card[props.cardNum].answer}</div>
             </div>
         </div>
         </>

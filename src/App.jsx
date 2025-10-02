@@ -4,8 +4,19 @@ import './App.css'
 
 function App() {
 
-  const front = ['Start!', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-  const back = ['Press next!', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十'];
+  const values = [
+  { question: 'Start!', answer: 'Press next!' },
+  { question: '1', answer: '一' },
+  { question: '2', answer: '二' },
+  { question: '3', answer: '三' },
+  { question: '4', answer: '四' },
+  { question: '5', answer: '五' },
+  { question: '6', answer: '六' },
+  { question: '7', answer: '七' },
+  { question: '8', answer: '八' },
+  { question: '9', answer: '九' },
+  { question: '10', answer: '十' }
+]
 
   const shuffle = (array) => {
         let i = array.length;
@@ -27,7 +38,6 @@ function App() {
 
   const [index, setIndex] = useState(shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
   const [cardNum, setCardNum] = useState(0);
-  const [card, setCard] = useState(front);
   const [flipped, setFlipped] = useState('card');
   
   const getIndex = () => {
@@ -42,7 +52,6 @@ function App() {
   const clickNext = () => {
     setFlipped('card');
     setTimeout(() => {
-      setCard(front);
       if (index.length > 0) {
         setCardNum(getIndex());
       }
@@ -54,18 +63,10 @@ function App() {
 
     if (flipped.includes('flipped')) {
       setFlipped('card');
-
-      setTimeout(() => {
-        setCard(front)
-      }, 180);
       
     } else {
       setFlipped('card flipped');
-      setTimeout(() => {
-        setCard(back)
-      }, 200);
     }
-
   };  
 
   return (
@@ -76,10 +77,10 @@ function App() {
           Test your knowledge of the Japanese characters
           for numbers 1 through 10!
         </h3>
-        <h4>Number of cards: {front.length - 1}</h4>
+        <h4>Number of cards: {values.length - 1}</h4>
       </div>
       <div className='outer-card'>
-        <Card flipped={flipped} cardNum={cardNum} card={card} flipFunction={clickCard}/> 
+        <Card flipped={flipped} cardNum={cardNum} card={values} flipFunction={clickCard}/> 
       </div>
       <button className="next" onClick={clickNext}>Next</button>
     </div>
