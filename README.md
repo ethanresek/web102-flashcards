@@ -111,7 +111,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/6e19c3f0fba04f768b48c4844684ffb3?sid=1e116780-9c00-42d2-b67f-d3da0590a9ed" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+![Video Walkthrough](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDR0cG84NThkNnNmM3dncHRmdm80OXZqeDBwcXR2b2ZiYzZhY2RlbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qaxXtUPiz5WttKXpJa/giphy.gif)
+
 
 ## Notes
 
