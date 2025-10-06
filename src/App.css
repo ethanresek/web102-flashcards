@@ -67,7 +67,35 @@ body{
 
 button {
   width: 80px;
+  padding: 10px;
+  text-align: center;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.input-box {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.guess-input {
+  border: 2px solid grey;
+  height: 25px;
+  border-radius: 4px;
 
 }
 
+.guess-input.correct{
+  border: 2px solid green;
+}
 
+.guess-input.incorrect{
+  border: 2px solid red;
+}
